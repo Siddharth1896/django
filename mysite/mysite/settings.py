@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-noai_whl$ml$4no68^doyn#al+e(rn^=1pxmi2&yym18+bc2_7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
