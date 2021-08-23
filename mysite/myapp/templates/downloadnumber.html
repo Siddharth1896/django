@@ -1,0 +1,21 @@
+<h2>Download the Result</h2>
+
+<style>
+    head {text-align:center}
+    body {text-align:center}
+</style>
+
+<head>
+    <title>Results</title>
+</head>
+
+<span>Hello, {{request.user}}</span>
+<span><a href= "{% url 'myapp:logout' %}">Logout</a></span><br>
+
+<body bgcolor="gray">
+    {% csrf_token %}
+    <br><a href="{% url 'myapp:downloadnumber_file' %}">Download</a><br>
+    <br><a href="{% url 'myapp:index' %}" class="button">Back to Start</a><br>
+</body>
+
+

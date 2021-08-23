@@ -1,0 +1,22 @@
+<html>
+    <style>
+        head {text-align:center}
+        body {text-align:center}
+    </style>
+
+    <head>
+        <title>Welcome to the Price Reference Match</title>
+    </head>
+
+    <span>Hello, {{request.user}}</span>
+    <span><a href= "{% url 'myapp:logout' %}">Logout</a></span>
+
+    <body bgcolor="gray">
+        {% csrf_token %}
+        <h1>Automation for Price Match</h1><br>
+        <a href= "{% url 'myapp:number' %}">Part Number Match</a><br>
+
+    </body>
+
+
+</html>

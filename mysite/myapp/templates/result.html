@@ -1,0 +1,13 @@
+<html>
+ <h1><strong>Part Number Match</strong></h1> 
+    <!-- <head>
+        <title>select right one</title>
+    </head> -->
+<body>
+<a href="{% url 'myapp:dum' %}" class="button">Check another File</a><br>
+<h3>Part Number Match Results:</h3> {{ df_data1|safe }}_
+<!-- <a href="{% url 'myapp:dum' %}" class="button">Check another File</a><br> -->
+<h3>Part Name Match Results:</h3> {{ df_data3|safe }}
+<!-- <button onclick="window.location.reload();">Refresh</button> -->
+</body>
+</html>

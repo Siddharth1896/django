@@ -1,0 +1,38 @@
+<!-- {% block content %}
+
+    <h1>Events</h1>
+
+    {{ b }}
+
+{% endblock %} -->
+
+<!doctype html>
+
+    <title>Upload an excel file</title>
+
+    <style>
+
+        #title
+        {
+            text-align: center;
+        }
+    </style>
+
+    <span>Hello, {{request.user}}</span>
+    <span><a href= "{% url 'myapp:logout' %}">Logout</a></span>
+
+    <div id="title">
+        <h1> Part Number Match (xlsx only)</h1>
+    </div>
+
+    <body bgcolor="gray">
+    <form action="{% url "myapp:test" %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h4>Select New Offer File</h4>
+        <p><input type=file name=file>
+        <!-- <h4>Select New Offer File</h4>
+        <p><input type=file name=file1><br> -->
+        <p><input type=submit value='Find Match'><br>
+    </form>
+    <button onclick="window.location.reload();">Refresh</button>
+    </body>
