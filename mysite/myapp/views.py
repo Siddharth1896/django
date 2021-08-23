@@ -1,6 +1,6 @@
 from re import L
 from django.http import response
-from django.http.response import ResponseHeaders
+#from django.http.response import ResponseHeaders
 from django.shortcuts import render
 from django.http import HttpResponse, request
 from flask.templating import render_template
